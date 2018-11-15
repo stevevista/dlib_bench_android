@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/conv_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/client_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convolution, 5x5 64 filters :  "/>
+
+            <TextView
+                android:id="@+id/conv_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:lines="1"
+                tools:foreground="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alex_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conv_group">
+            <TextView
+                android:id="@+id/alex_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alexnet :  "/>
+
+            <TextView
+                android:id="@+id/alex_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:lines="1"
+                tools:foreground="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/res_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alex_group">
+            <TextView
+                android:id="@+id/res_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resnet-34 :  "/>
+
+            <TextView
+                android:id="@+id/res_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:lines="1"
+                tools:foreground="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/incept_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/res_group">
+            <TextView
+                android:id="@+id/incept_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inception-3 :  "/>
+
+            <TextView
+                android:id="@+id/incept_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:lines="1"
+                tools:foreground="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run Test"
+            tools:layout_editor_absoluteX="279dp"
+            tools:layout_editor_absoluteY="446dp"
+            android:layout_below="@+id/incept_group"/>
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
